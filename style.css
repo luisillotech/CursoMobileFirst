@@ -233,6 +233,9 @@ main {
     line-height: 1.5rem;
     color: var(--warm-black);
 }
+
+
+/*  SECCION 2  */
 .main-product-detail {
     position: relative;
     width: 100%;
@@ -271,7 +274,7 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
-
+/* ARTICLE 1, 2, 3, 4 ESTILOS A LOS CONTENEDORES PADRE */
 .product-detail--card {
     width: 90%;
     min-width: 288px;
@@ -283,16 +286,29 @@ main {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.product-detail--card .clock {
+/* SPAN ICONOS */
+.product-detail--card .iconsize {
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./assets/icons/clock.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+.product-detail--card .clock {
+    background-image: url(./assets/icons/clock.svg);
+}
+.product-detail--card .eye{
+    background-image: url(./assets/icons/eye.svg);
+}
+.product-detail--card .moneda {
+    background-image: url(./assets/icons/dollar-sign.svg);
+}
+.product-detail--card .check {
+    background-image: url(./assets/icons/check-circle.svg);
+}
+/* ESTILOS A LOS PARRAFOS DE LA TARJETA*/
 .product--card-title {
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -307,35 +323,51 @@ main {
     color: #808080;
 }
 
-.product-detail--card .eye {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url(./assets/icons/eye.svg);
-    background-size: cover;
+/* SECCION 3 */
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/imgs/bitcoinbaby\ 1.png');
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
 }
 
-.product-detail--card .moneda {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url(./assets/icons/dollar-sign.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* SECCION 4 */
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
 }
 
-.product-detail--card .check {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url(./assets/icons/check-circle.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
